@@ -1,4 +1,5 @@
 class DogsController < ApplicationController
+  skip_before_action :authorized
   before_action :set_dog, only: [:show, :update, :destroy]
 
   # GET /dogs
